@@ -19,7 +19,7 @@ RUN set -eux; \
     mkdir -p /opt/keycloak/data ; \
     chmod -R g+rwX /opt/keycloak
 
-FROM amazoncorretto:21-alpine AS dist-amazonlinux
+FROM amazoncorretto:21 AS dist-amazonlinux
 
 # Install curl. May be useful in heatlcheck
 RUN set -eux; \
